@@ -9,55 +9,47 @@ Styles for personal website
   --light-steel-blue: rgb(228, 228, 228);
   --baby-powder: #f0f4efff;
   --sage: #bfcc94ff;
+  scroll-behavior: smooth;
 }
 
-header {
-  background-color: var(--light-steel-blue);
+/* * { border: 1px solid black; } */
+
+.grow { transition: all .2s ease-in-out; }
+.grow:hover { transform: scale(1.1); }
+
+.parent {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: space-evenly;
 }
 
-header > h2 {
-  margin-left: 20px;
+img {
+  max-width: 100%;
 }
 
-ul {
-  list-style-position: inside;
-}
-
-nav li {
-  display: inline;
-}
-
-nav a {
-  margin-left: 70px;
-  font-size: 20px;
-  margin-right: 70px;
-}
-
-nav a:link, nav a:visited {
-  color: var(--rich-black-fogra-29);
-}
-
-a:link, a:visited {
-  text-decoration: none;
+#landing {
+  flex-direction: column;
 }
 
 main {
-  display: flex;
-  justify-content: left;
   margin: 0 5% 5% 5%;
 }
 
+#landing {
+  height: 100vh;
+}
+
+#intro > * {
+  margin: 5% 5%;
+}
+
 .picture {
-  margin-top: 75px;
+  padding-top: 50px;
   width: 40%;
+  height: 40%;
 }
 
 .about-me {
   width: 60%;
-  margin: 5% 5%;
 }
 
 body {
@@ -68,12 +60,53 @@ body {
 }
 
 h1 {
-  font-size: 64px;
+  margin: 10px 0px 10px 0px;
+  font-size: 48pt;
   color: var(--indigo-dye)
+}
+
+h2 {
+  font-size: 32pt;
+  color: var(--indigo-dye);
 }
 
 .self-picture {
   width: 100%;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+  color: var(--rich-black-fogra-29);
+}
+
+#continue {
+  text-align: center;
+}
+
+#projects, #experiences{
+  flex-direction: column;
+  text-align: center;
+}
+
+.project {
+  width: 30%;
+}
+
+.experience {
+  margin: 0px 5% 5% 5%;
+}
+
+.experience-img {
+  width: 30%;
+}
+
+.experience-text {
+  width: 70%;
+}
+
+.experience-text > * {
+  margin: 0px 5px 0px 5px;
+  text-align: left;
 }
 
 footer {
