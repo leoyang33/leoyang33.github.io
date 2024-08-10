@@ -1,136 +1,140 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Leo Yang</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+	  	<link rel="icon" href="media/favicon.ico">
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-    rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
-  <link rel="icon" href="media/favicon.ico">
-  <script src="helpers.js"></script>
-  <script defer src="index.js"></script>
-  <title>Leo Yang</title>
-</head>
+		<!-- Wrapper-->
+			<div id="wrapper">
 
-<body>
-  <main>
+				<!-- Nav -->
+					<nav id="nav">
+						<a href="#" class="icon solid fa-home"><span>Home</span></a>
+						<a href="#experience" class="icon solid fa-folder"><span>Experience</span></a>
+						<a href="#education" class="icon solid fa-graduation-cap"><span>Education</span></a>
+						<a href="#links" class="icon solid fa-link"><span>Links</span></a>
+					</nav>
 
-    <section class="parent" id="landing">
-      <section id="intro" class="parent">
-        <section class="picture">
-          <img class="self-picture" src="media/self.jpg" alt="Picure of Me">
-        </section>
-        <section class="about-me">
-          <h1>Hi, I'm Leo Yang &#x1F44B</h1>
-          <p>Thanks for checking out my website! Originally I'm from Blacksburg, VA but I currently
-            live in Pasadena, CA as an undergraduate at the California
-            Institute of Technology. I love learning about new technologies and
-            applying them to my personal projects which is why I'm majoring
-            in computer science and minoring in information & data sciences. I'm expecting to
-            graduate June 2024, and would love to
-            join the software engineering industry.</p>
-          <p>
-            In my free time, I love to swim. I've swam competitively for over 10 years, and
-            have qualified for and competed at the NCAA national championships where I was
-            recognized as an All-American. I also like playing strategic video
-            games and theorycrafting possible strategies. I enjoy staying up to date with
-            tech news,
-            and frequently find myself watching YouTube videos about the latest tech.
-          </p>
-          <p>If you'd like to talk,
-            please reach out to me via any of my socials!
-          </p>
+				<!-- Main -->
+					<div id="main">
 
-          <section id="socials" class="parent">
-            <a target="_blank" href="https://github.com/leoyang33"
-              class="fa-brands fa-github fa-3x grow"></a>
-            <a target="_blank" href="https://www.linkedin.com/in/leoyang33/"
-              class="fa-brands fa-linkedin fa-3x grow"></a>
-            <a target="_blank" href="mailto:leoyang33@yahoo.com"
-              class="fa fa-square-envelope fa-3x grow"></a>
-            <a target="_blank" href="media/Leo_Yang_Resume.pdf"
-              class="fa-solid fa-file-lines fa-3x grow"></a>
-          </section>
-        </section>
+						<!-- Me -->
+							<article id="home" class="panel intro">
+								<header>
+									<h1>Hi, I'm Leo 👋</h1>
+									<p>Software Engineer</p>
+								</header>
+								<a href="#experience" class="jumplink pic">
+								
+									<img src="images/me.jpg" alt="" />
+								</a>
+							</article>
 
-      </section>
-      <a href="#projects" class="fa-solid fa-circle-chevron-down fa-3x grow" id="continue"></a>
-    </section>
+						<!-- Experience -->
+							<article id="experience" class="panel">
+								<header>
+									<h2>Experience</h2>
+								</header>
+								<section>
+									<div class="container">
+										<img src="images/apl.png" alt="APL logo" class="image">
+										<div class="text-content">
+											<h3>Software Engineer</h3>
+											<h4>Johns Hopkins Applied Physics Laboratory</h4>
+											<p>blah blah blah</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<div class="container">
+										<img src="images/sdl.jpg" alt="SDL logo" class="image">
+										<div class="text-content">
+											<h3>Software Engineer Intern</h3>
+											<h4>Space Dynamics Laboratory</h4>
+											<p>blah blah blah</p>
+										</div>
+									</div>
+								</section>
+								<section>
+									<div class="container">
+										<img src="images/caltech.png" alt="Caltech logo" class="image">
+										<div class="text-content">
+											<h3>Summer Undergraduate Research Fellow</h3>
+											<h4>Caltech</h4>
+											<p>blah blah blah</p>
+										</div>
+									</div>
+								</section>
 
-    <section class="parent" id="projects">
-      <h2>Projects</h2>
-      <section id="project-list" class="parent">
-        <article class="project">
-          <h3>Physics Engine & Platformer Game</h3>
-          <p>
-            Created a physics engine in C that simulated forces and collisions. This engine was then
-            used to create a
-            multiplayer game that involved creating multiple levels, obstacles, and platforms for
-            the players to traverse.
-          </p>
-          <img src="media/parkour.png" alt="Screenshot of title screen of game">
-        </article>
+							</article>
 
-        <article class="project">
-          <h3>Mock eCommerce Site</h3>
-          <p>Developed a full-stack e-commerce store website using JavaScript, Node.js, HTML, and
-            CSS that utilized 5+ GET
-            and POST endpoints to update the store’s inventory, promote sales, and categorize
-            products.
-          </p>
-          <img src="media/store.png" alt="Picture of ecommerce store">
-        </article>
+						<!-- Education -->
+							<article id="education" class="panel">
+								<header>
+									<h2>Education</h2>
+								</header>
 
-        <article class="project">
-          <h3>This website!</h3>
-          <p>Built completely from scratch using HTML and CSS. Planning to experiment with various
-            web
-            frameworks.</p>
-          <img src="media/site.png" alt="Picture of this site's landing screen">
-        </article>
-      </section>
+								<section>
+									<div class="container">
+										<img src="images/hopkins.png" alt="Johns Hopkins logo" class="image">
+										<div class="text-content">
+											<h3>Johns Hopkins University (2024 - Present)</h3>
+											<p>Master of Science in Computer Science</p>
+										</div>
+									</div>
+								</section>
 
-      <section class="parent" id="experiences">
-        <h2>Experience</h2>
-        <article class="parent experience">
-          <img src="media/skyportal.png" alt="Screenshot of Skyportal homepage"
-            class="experience-img">
-          <article class="experience-text">
-            <h3>Caltech Summer Undergraduate Research Fellow</h3>
-            <h4>June 2024 - Aug 2024</h4>
-            <p>
-            <ul>
-              <li>
-                Developed code for SkyPortal, an open-source astronomical data platform. Worked
-                under Dr. Robert
-                Stein with the Kasliwal Research Group and the Fritz Marshal dev team.
-              </li>
-              <li>Used ReactJS and Python to implement 2 new frontend components and 3 new backend
-                API endpoints to
-                help streamline the analysis of over 2500 GCN Events saved in the database that will
-                aid in the research
-                of kilonovae during LIGO/Virgo/KAGRA’s O4 observing run.
-              </li>
-            </ul>
-            </p>
-          </article>
-        </article>
-      </section>
-    </section>
-  </main>
+								<section>
+									<div class="container">
+										<img src="images/caltech.png" alt="Caltech logo" class="image">
+										<div class="text-content">
+											<h3>California Institute of Technology (2020 - 2024)</h3>
+											<p>Bachelor of Science in Computer Science <br> Minor in Data Science</p>
+										</div>
+									</div>
+								</section>
 
-  <footer>
-    &copy;2022
-    <script>new Date().getFullYear() > 2022 && document.write("-" + new Date().getFullYear());</script>
-    Leo Yang
-  </footer>
-</body>
+							</article>
 
+						<!-- Socials -->
+							<article id="links" class="panel">
+								<header>
+									<h2>Links</h2>
+								</header>
+								<section>
+									<nav id="linksnav">
+										<a href="https://github.com/leoyang33" target="_blank" class="fa-brands fa-github"><span>Github</span></a>
+										<a href="https://www.linkedin.com/in/leoyang33/" target="_blank" class="fa-brands fa-linkedin"><span>LinkedIn</span></a>
+										<a href="#education" class="icon solid fa-file-alt"><span>Resume</span></a>
+									</nav>
+								</section>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<div id="footer">
+						<ul class="copyright">
+							
+						</ul>
+					</div>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
 </html>
